@@ -1,0 +1,43 @@
+html, body, .container {
+  height: 100%; }
+
+body {
+  background-color: #004A49;
+  font-family: Merriweather, Lora, serif;
+  color: #ffffff; }
+
+h1, h2 {
+  font-family: Raleway, Roboto, Helvetica, sans-serif; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 48px; }
+
+.o-flexGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .o-flexGrid__cell {
+    min-width: 0; }
+
+.container {
+  text-align: center; }
+
+.url {
+  padding: 8px 16px;
+  color: #ffffff;
+  text-decoration: none; }
+  .url:hover {
+    opacity: 0.5; }
+
+.u-alignItemsCenter {
+  align-items: center; }
+
+.u-justifyContentCenter {
+  justify-content: center; }
+
+/*# sourceMappingURL=styles.css.map */
