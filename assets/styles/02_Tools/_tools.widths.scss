@@ -1,0 +1,25 @@
+///*------------------------------------*\
+//    #TOOLS - WIDTHS
+//\*------------------------------------*/
+
+// A mixin to spit out our width classes. Pass in the columns we want the widths
+// to have, and an optional prefix for responsive widths. E.g. to create thirds
+// and quarters for a small breakpoint:
+//
+// @include widths(3 4, -sm);
+
+@mixin widths($widthsColumns, $widthsBreakpoint: null) {
+  @each $widthsDenominator in $widthsColumns {
+    @if ($widthsDenominator == 1) {
+      .u-1\/#{$widthsDenominator}#{$widthsBreakpoint} {
+        flex: 0 0 100% !important;
+      }
+    } @else {
+      @for $widthsNumerator from 1 to $widthsDenominator {
+        .u-#{$widthsNumerator}\/#{$widthsDenominator}#{$widthsBreakpoint} {
+          flex: 0 0 ($widthsNumerator / $widthsDenominator * 100%) !important;
+        }
+      }
+    }
+  }
+}

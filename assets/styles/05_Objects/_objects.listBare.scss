@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #OBJECTS - LIST-BARE
+\*------------------------------------*/
+
+/**
+ * The list-bare object simply removes any indents and bullet points from lists.
+ *
+ * Note: Declaring the item class might not be necessary everywhere,
+ * but is for example in <dl> lists for the <dd> children.
+ */
+
+.o-listBare {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-left: 0;
+  }
+}

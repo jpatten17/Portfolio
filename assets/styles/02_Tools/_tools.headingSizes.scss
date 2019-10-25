@@ -1,0 +1,57 @@
+///*------------------------------------*\
+//    #TOOLS - HEADING SIZES
+//\*------------------------------------*/
+
+// Calculate the heading sizes
+
+// Calculate the power of a number
+
+@function exponent($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return  $value;
+}
+
+// Calculate the font size for a heading using the font
+// ratio, exponent, and base font size. The font-size is
+// calculated by multiplying the base font size by the
+// ratio `exponent` number of times.
+//
+// h2 {
+//   font-size: headingValue(1.5, 4, 18px);
+// }
+//
+
+@function headingValue($ratio, $power, $base: 16px) {
+  $value: exponent($ratio, $power);
+
+  $value: $value * $base;
+
+  @return $value;
+}
+
+// Calculate the font sizes for headings by selecting
+// the base heading number, the font ratio, and base
+// heading size.
+//
+// @include headingSizes(4, 1.5, 18px);
+//
+
+@mixin headingSizes($h, $ratio, $base: 16px) {
+
+  @for $heading from 1 through 6 {
+    h#{$heading} {
+      font-size: $base * (exponent($ratio, ($h - $heading)));
+    }
+  }
+}

@@ -1,0 +1,76 @@
+$primary: #004a49;
+$primary--dark: #003332;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Merriweather, Lora, serif;
+  font-size: 16px;
+  color: #ffffff;
+  background: #004a49;
+  background: -moz-linear-gradient(top, $primary 0%, $primary--dark 100%);
+  background: -webkit-linear-gradient(top, $primary 0%, $primary--dark 100%);
+  background: linear-gradient(to bottom, $primary 0%, $primary--dark 100%);
+}
+
+h1, h2 {
+  font-family: Raleway, Roboto, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 32px 0;
+}
+
+.container {
+  height: 80%;
+  text-align: center;
+}
+
+.url {
+  padding: 8px 32px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 24px 0;
+  }
+
+  .url {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .url {
+    font-size: 12px;
+  }
+}

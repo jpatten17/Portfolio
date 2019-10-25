@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #OBJECTS - LIST-INLINE
+\*------------------------------------*/
+
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+
+.o-listInline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+  }
+}

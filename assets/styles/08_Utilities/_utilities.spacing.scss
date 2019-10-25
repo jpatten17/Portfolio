@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #UTILITIES - SPACING
+\*------------------------------------*/
+
+/**
+ * Utility classes to put specific spacing values onto elements. Vinuit
+ * will generate a suite of classes like:
+ *
+ *   .u-marginTop {}
+ *   .u-paddingLeft--large {}
+ *   .u-padding {}
+ *   .u-marginHorizontal--auto {}
+ */
+
+@include spacing();

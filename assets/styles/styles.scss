@@ -1,95 +1,45 @@
-$primary: #004a49;
-$primary--dark: #003332;
+// 01 Settings
+@import "01_Settings/settings.responsive";
+@import "01_Settings/settings.defaults";
 
-html, body {
-  height: 100%;
-}
+// 02 Tools
+@import "02_Tools/tools.mediaQuery";
+@import "02_Tools/tools.math";
+@import "02_Tools/tools.spacing";
+@import "02_Tools/tools.widths";
+@import "02_Tools/tools.vendorPrefixes";
+@import "02_Tools/tools.headingSizes";
 
-body {
-  margin: 0;
-  font-family: Merriweather, Lora, serif;
-  font-size: 16px;
-  color: #ffffff;
-  background: #004a49;
-  background: -moz-linear-gradient(top, $primary 0%, $primary--dark 100%);
-  background: -webkit-linear-gradient(top, $primary 0%, $primary--dark 100%);
-  background: linear-gradient(to bottom, $primary 0%, $primary--dark 100%);
-}
+// 03 Generic
+@import "03_Generic/generic.normalize";
+@import "03_Generic/generic.reset";
+@import "03_Generic/generic.print";
+@import "03_Generic/generic.boxSizing";
+@import "03_Generic/generic.shared";
 
-h1, h2 {
-  font-family: Raleway, Roboto, Helvetica, sans-serif;
-}
+// 04 Elements
+@import "04_Elements/elements.page";
+@import "04_Elements/elements.images";
+@import "04_Elements/elements.headings";
 
-h1 {
-  font-size: 48px;
-}
+// 05 Objects
+@import "05_Objects/objects.listBare";
+@import "05_Objects/objects.mediaObject";
+@import "05_Objects/objects.flexGrids";
 
-h2 {
-  font-size: 24px;
-  margin: 32px 0;
-}
+// 06 Hybrids
 
-.o-flexGrid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+// 07 Components
 
-  &__cell {
-    min-width: 0;
-  }
-}
+// 07.5 Vendor
 
-.container {
-  height: 80%;
-  text-align: center;
-}
+// 08 Utilities
+@import "08_Utilities/utilities.spacing";
+@import "08_Utilities/utilities.spacingResponsive";
+@import "08_Utilities/utilities.headings";
+@import "08_Utilities/utilities.widths";
+@import "08_Utilities/utilities.widthsResponsive";
+@import "08_Utilities/utilities.flexGrid";
 
-.url {
-  padding: 8px 32px;
-  color: #ffffff;
-  text-decoration: none;
-
-  &:hover {
-    opacity: 0.5;
-  }
-}
-
-.u-alignItemsCenter {
-  align-items: center;
-}
-
-.u-justifyContentCenter {
-  justify-content: center;
-}
-
-@media screen and (min-width: 720px) and (max-width: 1024px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 18px;
-    margin: 24px 0;
-  }
-
-  .url {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  h1 {
-    font-size: 27px;
-  }
-
-  h2 {
-    font-size: 16px;
-    margin: 20px 0;
-  }
-
-  .url {
-    font-size: 12px;
-  }
-}
+// 09 Shame
+@import "09_Shame/shame";
