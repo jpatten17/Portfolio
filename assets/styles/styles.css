@@ -3151,7 +3151,7 @@ body {
   background: -webkit-linear-gradient(top, #004a49 0%, #003332 100%);
   background: linear-gradient(to bottom, #004a49 0%, #003332 100%); }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Raleway, Roboto, Helvetica, sans-serif; }
 
 h1 {
