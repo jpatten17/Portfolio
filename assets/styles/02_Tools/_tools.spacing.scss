@@ -1,0 +1,57 @@
+///*------------------------------------*\
+//    #TOOLS - SPACING
+//\*------------------------------------*/
+
+// A mixin to spit out our spacing classes. It uses the predefined
+// naming for the properties, directions, and sizes added to the
+// class names, and accepts breakpoints as an input to create
+// responsive spacing classes.
+
+$spacingProperties: (
+    "margin" : "margin",
+    "padding" : "padding"
+) !default;
+
+$spacingDirections: (
+    null : null,
+    "Top" : "-top",
+    "Right" : "-right",
+    "Bottom" : "-bottom",
+    "Left" : "-left",
+    "Horizontal" : "-left" "-right",
+    "Vertical" : "-top" "-bottom",
+) !default;
+
+$spacingSizes: (
+    null : $baseSpacingUnit,
+    "--tiny" : $baseSpacingUnit--tiny,
+    "--small" : $baseSpacingUnit--small,
+    "--large" : $baseSpacingUnit--large,
+    "--huge" : $baseSpacingUnit--huge,
+    "--0" : 0,
+) !default;
+
+@mixin spacing($spacingBreakpoints: null) {
+  @each $propertyNamespace, $property in $spacingProperties {
+    @each $directionNamespace, $directionRules in $spacingDirections {
+      @each $sizeNamespace, $size in $spacingSizes {
+        .u-#{$propertyNamespace}#{$directionNamespace}#{$sizeNamespace}#{$spacingBreakpoints} {
+          @each $direction in $directionRules {
+            #{$property}#{$direction}: $size !important;
+          }
+        }
+      }
+    }
+
+    // auto margins
+    @if $propertyNamespace == "margin" {
+      @each $directionNamespace, $directionRules in $spacingDirections {
+        .u-#{$propertyNamespace}#{$directionNamespace}--auto#{$spacingBreakpoints} {
+          @each $direction in $directionRules {
+            #{$property}#{$direction}: auto !important;
+          }
+        }
+      }
+    }
+  }
+}

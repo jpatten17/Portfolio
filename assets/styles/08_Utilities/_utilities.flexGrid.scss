@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #UTILITIES - FLEX GRID HELPERS
+\*------------------------------------*/
+
+/**
+ * Flex grid helper classes for Flexbox.
+ */
+
+// justify-content
+.u-justifyContentSpaceBetween {
+  justify-content: space-between !important;
+}
+
+.u-justifyContentSpaceAround {
+  justify-content: space-around !important;
+}
+
+.u-justifyContentCenter {
+  justify-content: center !important;
+}
+
+// align-items
+.u-alignItemsCenter {
+  align-items: center !important;
+}
+
+.u-alignItemsBaseline {
+  align-items: baseline !important;
+}
+
+// flex-direction
+.u-flexDirectionColumn {
+  flex-direction: column !important;
+}
+
+// flex
+.u-flex1 {
+  flex: 1 !important;
+}

@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    #OBJECTS - FLEX GRIDS
+\*------------------------------------*/
+
+/**
+ * Grids using Flexbox
+ *
+ * Basic one-dimensional horizontal grids using Flexbox to create
+ * full-height columns. Cells will wrap if a width/min-width is set.
+ *
+ * Gutters are created using negative margins on the grid container
+ * and padding on the grid cells.
+ *
+ * Width utilities can be used on cells to fix width to a fraction
+ * of the grid container. Grid utilities can be added to vary the
+ * grid properties.
+ *
+ * Example grid:
+ *
+ * <div class="o-flexGrid o-flexGridGutters u-alignItemsCenter">
+ *   <div class="o-flexGrid__cell  u-1/2 u-palm-1/1">
+ *   </div>
+ *   <div class="o-flexGrid__cell  u-1/2">
+ *   </div>
+ * </div>
+ */
+
+$flexGrid--gutters:              $baseSpacingUnit !default;
+$flexGrid--gutters--tiny:        quarter($flexGrid--gutters) !default;
+$flexGrid--gutters--small:       halve($flexGrid--gutters) !default;
+$flexGrid--gutters--large:       double($flexGrid--gutters) !default;
+$flexGrid--gutters--huge:        quadruple($flexGrid--gutters) !default;
+
+.o-flexGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  &__cell, &--gutters__cell {
+    min-width: 0; // Hack to correct issue with overflow in FF & Chrome when using Flexbox (makes content width work)
+  }
+
+  &--gutters {
+    margin: 0 (-$flexGrid--gutters);
+
+    & > .o-flexGrid--gutters__cell {
+      padding: $flexGrid--gutters;
+    }
+
+    &--tiny {
+      margin: 0 (-$flexGrid--gutters--tiny);
+
+      & > .o-flexGrid--gutters__cell {
+        padding: $flexGrid--gutters--tiny;
+      }
+    }
+
+    &--small {
+      margin: 0 (-$flexGrid--gutters--small);
+
+      & > .o-flexGrid--gutters__cell {
+        padding: $flexGrid--gutters--small;
+      }
+    }
+
+    &--large {
+      margin: 0 (-$flexGrid--gutters--large);
+
+      & > .o-flexGrid--gutters__cell {
+        padding: $flexGrid--gutters--large;
+      }
+    }
+
+    &--huge {
+      margin: 0 (-$flexGrid--gutters--huge);
+
+      & > .o-flexGrid--gutters__cell {
+        padding: $flexGrid--gutters--huge;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #UTILITIES - WIDTHS
+\*------------------------------------*/
+
+/**
+ * Vinuit generates a series of utility classes that can be applied to
+ * an element to give it a fluid width and follow the grid system.
+ */
+
+// By default, Vinuit provides you fractions of one whole, halves, thirds,
+// quarters, fifths, and sixths, e.g.:
+//
+//   .u-1/6
+//   .u-2/5
+//   .u-3/4
+
+$widthsColumns: (1, 2, 3, 4, 5, 6) !default;
+
+@include widths($widthsColumns);

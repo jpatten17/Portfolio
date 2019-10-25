@@ -1,0 +1,54 @@
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+///*------------------------------------*\
+//    #SETTINGS - DEFAULTS
+//\*------------------------------------*/
+
+// These variables are Vinuit’s defaults
+
+$baseFontSize:              16px !default;
+// Multiple used between font sizes
+$baseFontRatio:             1.3333 !default;
+// Used to define the vertical rhythm
+$baseLineHeight:            1.5 !default;
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but
+// if overriding in Palette, Palette must either be before Defaults, or any
+// defaults used must also be declared in Palette.
+$baseSpacingUnit:           $baseLineHeight * $baseFontSize !default;
+$baseSpacingUnit--tiny:     round($baseSpacingUnit / 4);
+$baseSpacingUnit--small:    round($baseSpacingUnit / 2);
+$baseSpacingUnit--large:    round($baseSpacingUnit * 2);
+$baseSpacingUnit--huge:     round($baseSpacingUnit * 4);
+
+// Unit checking
+@each $baseVariables in
+  $baseFontSize
+  $baseFontRatio
+  $baseLineHeight
+  $baseSpacingUnit {
+
+  @if (type-of($baseVariables) != number) {
+    @error "`#{$baseVariables}` needs to be a number.";
+  }
+}
+
+@if (unit($baseFontSize) != "px") {
+  @error "`$baseFontSize` needs to be a pixel value.";
+}
+
+@if (unitless($baseFontRatio) == false) {
+  @error "`$baseFontRatio` needs to be unitless.";
+}
+
+@if (unitless($baseLineHeight) == false) {
+  @error "`$baseLineHeight` needs to be unitless.";
+}
+
+@if (unit($baseSpacingUnit) != "px") {
+  @error "`$baseSpacingUnit` needs to be a pixel value.";
+}
