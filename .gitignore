@@ -27,5 +27,5 @@
 .ruby-version
 
 # Ignore styles.css and styles.css.map
-# styles.css
+styles.css
 styles.css.map

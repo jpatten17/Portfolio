@@ -1,5 +1,3 @@
-activate :directory_indexes
-
 set :port, '7889'
 
 page "/*"
@@ -7,7 +5,10 @@ page "/*"
 # Use relative URLs
 activate :relative_assets
 
-set :css_dir, 'assets/styles'
+activate :livereload
+activate :directory_indexes
+
+set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 
