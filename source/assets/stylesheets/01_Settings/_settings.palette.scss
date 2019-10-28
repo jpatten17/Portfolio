@@ -1,0 +1,12 @@
+// Literal Variables
+$green: #004a49; // green--400
+$green--500: #005d5c;
+$green--200: #003332;
+$light: #ffffff;
+
+// Semantic Variables
+$primary: $green;
+$secondary: $green--200;
+
+$color-body: $light;
+$color-anchor: $color-body;

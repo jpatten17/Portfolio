@@ -1,0 +1,16 @@
+.c-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: $baseSpacingUnit--small $baseSpacingUnit--large;
+
+  &__item {
+    margin: 0 $baseSpacingUnit--small;
+
+    &--text {
+      padding: $baseSpacingUnit--small;
+      font-family: $font-heading;
+    }
+  }
+}

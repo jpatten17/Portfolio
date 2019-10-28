@@ -1,0 +1,11 @@
+// Literal Variables
+$font-serif: Merriweather, Lora, serif;
+$font-sansSerif: Raleway, Roboto, Helvetica, sans-serif;
+
+// Semantic Variables
+$font-heading: $font-sansSerif;
+$font-body: $font-serif;
+
+// Base Typography
+$baseSpacingUnit: $baseFontSize;
+$baseFontFamily: $font-body;

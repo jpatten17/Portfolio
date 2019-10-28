@@ -1,41 +1,32 @@
-/*------------------------------------*\
-    #ELEMENTS - HEADINGS
-\*------------------------------------*/
-
-$baseHeading: 5 !default;
-
-/**
- * Heading sizes 1–6.
- */
-
-// Equivalent to `@include headingSizes($baseHeading, $baseFontRatio, $baseFontSize);`
-$headingSize1: headingValue($baseFontRatio, $baseHeading - 1, $baseFontSize) !default;
-$headingSize2: headingValue($baseFontRatio, $baseHeading - 2, $baseFontSize) !default;
-$headingSize3: headingValue($baseFontRatio, $baseHeading - 3, $baseFontSize) !default;
-$headingSize4: headingValue($baseFontRatio, $baseHeading - 4, $baseFontSize) !default;
-$headingSize5: headingValue($baseFontRatio, $baseHeading - 5, $baseFontSize) !default;
-$headingSize6: headingValue($baseFontRatio, $baseHeading - 6, $baseFontSize) !default;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, Roboto, Helvetica, sans-serif;
+}
 
 h1 {
-  font-size: $headingSize1;
+  margin: 0;
 }
 
 h2 {
-  font-size: $headingSize2;
+  // top margins are the next larger font size to help with information association
+  margin-top: ($headingSize2 * $baseFontRatio);
 }
 
 h3 {
-  font-size: $headingSize3;
+  // top margins are the next larger font size to help with information association
+  margin-top: ($headingSize3 * $baseFontRatio);
 }
 
 h4 {
-  font-size: $headingSize4;
+  // top margins are the next larger font size to help with information association
+  margin-top: ($headingSize4 * $baseFontRatio);
 }
 
 h5 {
-  font-size: $headingSize5;
+  // top margins are the next larger font size to help with information association
+  margin-top: ($headingSize5 * $baseFontRatio);
 }
 
 h6 {
-  font-size: $headingSize6;
+  // top margins are the next larger font size to help with information association
+  margin-top: ($headingSize6 * $baseFontRatio);
 }

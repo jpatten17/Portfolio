@@ -1,0 +1,22 @@
+.c-icon {
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+
+  &--large {
+    height: $baseSpacingUnit--huge;
+    width: $baseSpacingUnit--huge;
+  }
+
+  &--linkedin {
+    background-image: url('../images/icon--linkedin.svg');
+  }
+
+  &--email {
+    background-image: url('../images/icon--email.svg');
+  }
+
+  &--hat {
+    background-image: url('../images/icon--hat.svg');
+  }
+}

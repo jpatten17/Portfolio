@@ -1,0 +1,9 @@
+a {
+  color: $color-anchor;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
