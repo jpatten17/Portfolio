@@ -1,3 +1,6 @@
+// 00 Dependencies
+@import "00_Dependencies/dependencies.fonts";
+
 // 01 Settings
 @import "Arrow/01_Settings/settings.responsive";
 @import "01_Settings/settings.palette";
@@ -23,9 +26,11 @@
 @import "Arrow/04_Elements/elements.page";
 @import "Arrow/04_Elements/elements.images";
 @import "Arrow/04_Elements/elements.headings";
+@import "04_Elements/elements.page";
 @import "04_Elements/elements.body";
 @import "04_Elements/elements.headings";
 @import "04_Elements/elements.anchors";
+@import "04_Elements/elements.hr";
 
 // 05 Objects
 @import "Arrow/05_Objects/objects.listBare";
@@ -34,9 +39,13 @@
 
 // 06 Components
 $headerHeight: 60px;
+$headerHeight--mobile: 128px;
 @import "06_Components/components.header";
-@import "06_Components/components.icon";
+@import "06_Components/components.section";
 @import "06_Components/components.landing";
+@import "06_Components/components.about";
+@import "06_Components/components.contact";
+@import "06_Components/components.icon";
 
 // 07 Vendor
 

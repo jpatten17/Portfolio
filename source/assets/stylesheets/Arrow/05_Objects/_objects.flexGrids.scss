@@ -38,45 +38,45 @@ $flexGrid--gutters--huge:        quadruple($flexGrid--gutters) !default;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  &__cell, &--gutters__cell {
+  &__cell {
     min-width: 0; // Hack to correct issue with overflow in FF & Chrome when using Flexbox (makes content width work)
   }
 
   &--gutters {
     margin: 0 (-$flexGrid--gutters);
 
-    & > .o-flexGrid--gutters__cell {
+    & > .o-flexGrid__cell {
       padding: $flexGrid--gutters;
     }
 
-    &--tiny {
+    &Tiny {
       margin: 0 (-$flexGrid--gutters--tiny);
 
-      & > .o-flexGrid--gutters__cell {
+      & > .o-flexGrid__cell {
         padding: $flexGrid--gutters--tiny;
       }
     }
 
-    &--small {
+    &Small {
       margin: 0 (-$flexGrid--gutters--small);
 
-      & > .o-flexGrid--gutters__cell {
+      & > .o-flexGrid__cell {
         padding: $flexGrid--gutters--small;
       }
     }
 
-    &--large {
+    &Large {
       margin: 0 (-$flexGrid--gutters--large);
 
-      & > .o-flexGrid--gutters__cell {
+      & > .o-flexGrid__cell {
         padding: $flexGrid--gutters--large;
       }
     }
 
-    &--huge {
+    &Huge {
       margin: 0 (-$flexGrid--gutters--huge);
 
-      & > .o-flexGrid--gutters__cell {
+      & > .o-flexGrid__cell {
         padding: $flexGrid--gutters--huge;
       }
     }

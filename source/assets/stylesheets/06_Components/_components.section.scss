@@ -1,0 +1,12 @@
+.c-section {
+  padding: $baseSpacingUnit--large $baseSpacingUnit--huge;
+
+  @include mediaQuery(portable) {
+    padding: $baseSpacingUnit--large;
+  }
+
+  &__maxWidth {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}

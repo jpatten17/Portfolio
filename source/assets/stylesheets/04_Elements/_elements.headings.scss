@@ -1,24 +1,40 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: Raleway, Roboto, Helvetica, sans-serif;
+  color: #f5f5f5;
 }
 
 h1 {
   margin: 0;
+
+  @include mediaQuery(palm) {
+    font-size: $headingSize2;
+  }
 }
 
 h2 {
   // top margins are the next larger font size to help with information association
   margin-top: ($headingSize2 * $baseFontRatio);
+  font-weight: 600;
 }
 
 h3 {
   // top margins are the next larger font size to help with information association
   margin-top: ($headingSize3 * $baseFontRatio);
+  font-weight: 200;
+  letter-spacing: 0.025em;
 }
 
 h4 {
   // top margins are the next larger font size to help with information association
   margin-top: ($headingSize4 * $baseFontRatio);
+  text-transform: uppercase;
+  color: $green--800;
+  font-weight: 600;
+
+  @include mediaQuery(palm) {
+    margin-top: (14px * $baseFontRatio);
+    font-size: 14px;
+  }
 }
 
 h5 {

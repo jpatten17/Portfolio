@@ -3,13 +3,16 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - #{$headerHeight});
-  padding: $baseSpacingUnit--large;
-  background: linear-gradient($primary, $secondary);
+  min-height: 550px;
+  padding-bottom: 10%;
+  background: linear-gradient($secondary 0%, $primary 60%);
 
   @include mediaQuery(palm) {
     display: block;
-    height: auto;
+    height: calc(100vh - #{$headerHeight--mobile});
+    min-height: 400px;
     padding: $baseSpacingUnit--large $baseSpacingUnit;
+    text-align: center;
   }
 
   &__headshot {

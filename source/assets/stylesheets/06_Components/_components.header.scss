@@ -1,13 +1,16 @@
 .c-header {
+  height: $headerHeight;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: $baseSpacingUnit--small $baseSpacingUnit;
+  align-items: center;
+  padding: $baseSpacingUnit--small $baseSpacingUnit--huge;
+  background: $secondary;
 
-  @include mediaQuery(lapAndUp) {
-    height: $headerHeight;
-    align-items: center;
-    padding: $baseSpacingUnit--small $baseSpacingUnit--huge;
+  @include mediaQuery(palm) {
+    height: $headerHeight--mobile;
+    align-items: flex-start;
+    padding: $baseSpacingUnit--small $baseSpacingUnit;
   }
 
   &__logo {
@@ -18,23 +21,19 @@
   }
   
   &__nav {
-    @include mediaQuery(lapAndUp) {
-      display: flex;
-      align-items: center;
+    @include mediaQuery(palm) {
+      max-width: 210px;
     }
   }
 
   &__item {
     display: block;
     margin: 0 $baseSpacingUnit--small;
+    padding: $baseSpacingUnit--small;
+    font-family: $font-heading;
 
-    &--text {
-      padding: $baseSpacingUnit--small;
-      font-family: $font-heading;
-
-      @include mediaQuery(palm) {
-        line-height: 1;
-      }
+    @include mediaQuery(palm) {
+      line-height: 1;
     }
 
     &:hover {
