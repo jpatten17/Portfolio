@@ -1,0 +1,28 @@
+.c-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - #{$headerHeight});
+  padding: $baseSpacingUnit--large;
+  background: linear-gradient($primary, $secondary);
+
+  @include mediaQuery(palm) {
+    display: block;
+    height: auto;
+    padding: $baseSpacingUnit--large $baseSpacingUnit;
+  }
+
+  &__headshot {
+    max-width: 250px;
+    margin: $baseSpacingUnit--huge;
+
+    @include mediaQuery(portable) {
+      max-width: 200px;
+      margin: $baseSpacingUnit;
+    }
+  }
+
+  &__title {
+    line-height: 1;
+  }
+}

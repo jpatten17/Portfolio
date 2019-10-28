@@ -1,16 +1,44 @@
 .c-header {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: $baseSpacingUnit--small $baseSpacingUnit--large;
+  justify-content: space-between;
+  padding: $baseSpacingUnit--small $baseSpacingUnit;
+
+  @include mediaQuery(lapAndUp) {
+    height: $headerHeight;
+    align-items: center;
+    padding: $baseSpacingUnit--small $baseSpacingUnit--huge;
+  }
+
+  &__logo {
+    height: ($baseLineHeight * $baseFontSize) + $baseSpacingUnit;
+    width: ($baseLineHeight * $baseFontSize) + $baseSpacingUnit;
+    background: url("../images/initials-logo.svg") center no-repeat;
+    background-size: $baseSpacingUnit--large;
+  }
+  
+  &__nav {
+    @include mediaQuery(lapAndUp) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
   &__item {
+    display: block;
     margin: 0 $baseSpacingUnit--small;
 
     &--text {
       padding: $baseSpacingUnit--small;
       font-family: $font-heading;
+
+      @include mediaQuery(palm) {
+        line-height: 1;
+      }
+    }
+
+    &:hover {
+      opacity: 0.65;
     }
   }
 }
