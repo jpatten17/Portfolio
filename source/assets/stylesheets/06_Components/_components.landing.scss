@@ -28,4 +28,10 @@
   &__title {
     line-height: 1;
   }
+
+  &__subtitle {
+    margin-top: $baseSpacingUnit--small;
+    font-size: $headingSize4;
+    color: $green--800;
+  }
 }

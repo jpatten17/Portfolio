@@ -1,14 +1,15 @@
 // Literal Variables
-$font-serif: Merriweather, Lora, serif;
-$font-sansSerif: Raleway, Roboto, Helvetica, sans-serif;
+$font-serif: Merriweather, Georgia, serif;
+$font-sansSerif: Raleway, Helvetica, sans-serif;
 
 // Semantic Variables
 $font-heading: $font-sansSerif;
 $font-body: $font-serif;
 
 // Base Typography
-$baseFontSize: 16px;
+$baseFontSize: 14px;
 $baseFontRatio: 1.5;
+$baseLineHeight: 1.75;
 $baseSpacingUnit: $baseFontSize;
 $baseFontFamily: $font-body;
 $baseHeading: 4;

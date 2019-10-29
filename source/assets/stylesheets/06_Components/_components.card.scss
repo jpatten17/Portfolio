@@ -1,0 +1,61 @@
+.c-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  padding: $baseSpacingUnit;
+  overflow: hidden;
+
+  &:hover {
+
+    & .c-card__image {
+      filter:blur(5px);
+    }
+
+    & .c-card__name {
+      color: $secondary;
+
+      &--light {
+        color: $light;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 0.1s;
+
+    &--arrow {
+      background-image: url('../images/arrow-preview.png');
+    }
+
+    &--raccMobile {
+      background-image: url('../images/racc-mobile-preview.png');
+    }
+
+    &--persephony {
+      background-image: url('../images/persephony-call-details.png');
+    }
+
+    &--graphicDesign {
+      background-image: url('../images/graphic-design-preview.png');
+    }
+  }
+
+  &__name {
+    z-index: 1;
+    text-align: center;
+    font-family: $font-heading;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+    transition: color 0.1s;
+  }
+}

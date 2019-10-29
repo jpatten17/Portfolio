@@ -30,11 +30,6 @@ h4 {
   text-transform: uppercase;
   color: $green--800;
   font-weight: 600;
-
-  @include mediaQuery(palm) {
-    margin-top: (14px * $baseFontRatio);
-    font-size: 14px;
-  }
 }
 
 h5 {

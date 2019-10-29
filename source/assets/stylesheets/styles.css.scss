@@ -38,13 +38,12 @@
 @import "Arrow/05_Objects/objects.flexGrids";
 
 // 06 Components
-$headerHeight: 60px;
-$headerHeight--mobile: 128px;
+$headerHeight: 72px;
+$headerHeight--mobile: 92px;
 @import "06_Components/components.header";
 @import "06_Components/components.section";
 @import "06_Components/components.landing";
-@import "06_Components/components.about";
-@import "06_Components/components.contact";
+@import "06_Components/components.card";
 @import "06_Components/components.icon";
 
 // 07 Vendor

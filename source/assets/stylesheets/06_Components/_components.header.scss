@@ -1,17 +1,10 @@
 .c-header {
-  height: $headerHeight;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $baseSpacingUnit--small $baseSpacingUnit--huge;
+  padding: $baseSpacingUnit $baseSpacingUnit--huge;
   background: $secondary;
-
-  @include mediaQuery(palm) {
-    height: $headerHeight--mobile;
-    align-items: flex-start;
-    padding: $baseSpacingUnit--small $baseSpacingUnit;
-  }
 
   &__logo {
     height: ($baseLineHeight * $baseFontSize) + $baseSpacingUnit;
@@ -19,10 +12,10 @@
     background: url("../images/initials-logo.svg") center no-repeat;
     background-size: $baseSpacingUnit--large;
   }
-  
+
   &__nav {
     @include mediaQuery(palm) {
-      max-width: 210px;
+      max-width: 155px;
     }
   }
 
@@ -33,6 +26,7 @@
     font-family: $font-heading;
 
     @include mediaQuery(palm) {
+      margin: 0 $baseSpacingUnit--tiny;
       line-height: 1;
     }
 

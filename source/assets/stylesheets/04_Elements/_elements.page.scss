@@ -2,8 +2,4 @@ html {
   font-family: $font-body;
   font-weight: 300;
   scroll-behavior: smooth;
-
-  @include mediaQuery(palm) {
-    font-size: 14px / 16px * 1em;
-  }
 }
