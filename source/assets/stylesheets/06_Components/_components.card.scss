@@ -15,11 +15,22 @@
     }
 
     & .c-card__name {
-      color: $secondary;
+      color: $dark;
+      text-shadow: 0 0 25px #ffffff;
 
       &--light {
         color: $light;
+        text-shadow: 0 0 25px #000000;
       }
+    }
+  }
+
+  @include mediaQuery(palm) {
+    height: 150px;
+    width: 150px;
+
+    &__br {
+      display: none;
     }
   }
 
@@ -40,8 +51,17 @@
       background-image: url('../images/racc-mobile-preview.png');
     }
 
+    &--conversion {
+      background-image: url('../images/racc-inventory3.png');
+      background-position-y: 18%;
+    }
+
     &--persephony {
       background-image: url('../images/persephony-call-details.png');
+    }
+
+    &--handbook {
+      background-image: url('../images/handbook-preview.png');
     }
 
     &--graphicDesign {

@@ -1,6 +1,6 @@
 set :port, '7889'
 
-page "/*"
+page "/projects/*", :layout => :projects_layout
 
 # Use relative URLs
 activate :relative_assets
