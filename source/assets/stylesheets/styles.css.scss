@@ -9,7 +9,6 @@
 @import "Arrow/02_Tools/tools.math";
 @import "Arrow/02_Tools/tools.spacing";
 @import "Arrow/02_Tools/tools.widths";
-@import "Arrow/02_Tools/tools.vendorPrefixes";
 @import "Arrow/02_Tools/tools.headingSizes";
 
 // 03 Generic
@@ -28,6 +27,7 @@
 @import "04_Elements/elements.headings";
 @import "04_Elements/elements.anchors";
 @import "04_Elements/elements.hr";
+@import "04_Elements/elements.code";
 
 // 05 Objects
 @import "Arrow/05_Objects/objects.listBare";
@@ -42,6 +42,8 @@ $headerHeight--mobile: 92px;
 @import "06_Components/components.landing";
 @import "06_Components/components.card";
 @import "06_Components/components.icon";
+@import "06_Components/components.project";
+@import "06_Components/components.caption";
 
 // 07 Vendor
 

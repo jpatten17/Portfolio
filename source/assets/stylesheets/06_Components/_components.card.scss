@@ -6,6 +6,7 @@
   height: 200px;
   width: 200px;
   padding: $baseSpacingUnit;
+  border: 1px solid $green--100;
   overflow: hidden;
 
   &:hover {

@@ -3,6 +3,7 @@ $green--800: #009694;
 $green--700: #007d7c;
 $green: #004a49; // green--400
 $green--200: #003332;
+$green--100: #002b2a;
 
 $light: #f5f5f5;
 $dark: #333333;
@@ -10,6 +11,8 @@ $dark: #333333;
 // Semantic Variables
 $primary: $green--200;
 $secondary: $green;
+
+$primaryGradient: linear-gradient($secondary 0%, $primary 60%);
 
 $color-body: $light;
 $color-anchor: $color-body;

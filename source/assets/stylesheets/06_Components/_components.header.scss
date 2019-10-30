@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: $baseSpacingUnit $baseSpacingUnit--huge;
-  background: $secondary;
+  background-color: $secondary;
 
   &__logo {
     height: ($baseLineHeight * $baseFontSize) + $baseSpacingUnit;

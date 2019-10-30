@@ -5,7 +5,7 @@
   height: calc(100vh - #{$headerHeight});
   min-height: 550px;
   padding-bottom: 10%;
-  background: linear-gradient($secondary 0%, $primary 60%);
+  background: $primaryGradient;
 
   @include mediaQuery(palm) {
     display: block;

@@ -1,3 +1,7 @@
 .u-textAlignCenter {
   text-align: center;
 }
+
+.view-more-work {
+  @extend .c-header__item;
+}
