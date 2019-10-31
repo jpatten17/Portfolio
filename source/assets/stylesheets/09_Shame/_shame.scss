@@ -5,3 +5,12 @@
 .view-more-work {
   @extend .c-header__item;
 }
+
+li {
+  padding-left: $baseSpacingUnit--small;
+}
+
+iframe {
+  border: 1px solid $green--100;
+  border-radius: 2px;
+}

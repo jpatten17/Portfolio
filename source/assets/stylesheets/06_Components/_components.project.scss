@@ -6,5 +6,13 @@
     width: 300px;
     margin: $baseSpacingUnit--large auto 0;
     border-radius: 2px;
+
+    &--large {
+      width: 450px;
+    }
+
+    &--long {
+      width: 250px;
+    }
   }
 }

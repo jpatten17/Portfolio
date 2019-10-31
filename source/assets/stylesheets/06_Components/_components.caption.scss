@@ -1,6 +1,6 @@
 .c-caption {
-  margin-top: $baseSpacingUnit--tiny;
+  margin-top: $baseSpacingUnit--small;
   margin-bottom: $baseSpacingUnit--large;
   text-align: center;
-  font-size: $headingSize4 - 2px;
+  font-size: ($headingSize5 + $headingSize4) / 2;
 }
