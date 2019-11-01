@@ -14,3 +14,40 @@ iframe {
   border: 1px solid $green--100;
   border-radius: 2px;
 }
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $baseSpacingUnit--large;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  cursor: zoom-out;
+
+  &__close {
+    position: fixed;
+    top: $baseSpacingUnit;
+    right: $baseSpacingUnit--large;
+    padding: $baseSpacingUnit;
+    font-size: $headingSize3;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &__image {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+[aria-hidden="false"] {
+  display: block;
+}
