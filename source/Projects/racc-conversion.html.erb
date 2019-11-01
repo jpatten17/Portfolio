@@ -1,0 +1,50 @@
+---
+
+title: "RACC Mobile | "
+
+---
+
+<section class="c-section c-project">
+  <div class="c-section__maxWidth">
+    <h2>RACC Front-End Conversion</h2>
+    <p>
+      Call centers handle millions of calls from their customers each day, and RACC (Routing And Call Control) does the heavy lifting. As Vail Systems' largest product, RACC's web application has grown over its ten years of existence, but was now filled with legacy code. As different developers worked on the product over the years, implementation styles changed and the latest technology was tried out on new features, leaving a codebase that included vanilla JavaScript, JQuery, Angular, and React, and little organization. The stylesheets lived in at least three or four different locations and were riddled with overrides. It's easy to say RACC was due for a rewrite.
+    </p>
+    <p>
+      Unfortunately our team never had the bandwidth to do a full rewrite, but having <a href="/projects/arrow">my SCSS framework</a> newly available we knew we could add some organization to the front-end code. Granted, this would still include a rewrite of all HTML/SLIM/HAML and CSS/SCSS across a large, tangled monolith, so it look some planning.
+    </p>
+    <h3>The Problem</h3>
+    <ul>
+      <li>The ten-year legacy code was difficult to work with.</li>
+      <li>Code duplication caused inconsistencies and made making changes difficult.</li>
+    </ul>
+    <p>The various technologies used over the years were also causing issues with usability and were limiting what we could change as the product grew.</p>
+    <p>
+      One of the large issues with RACC was the rampant code duplication in both the markup and styles. Many buttons that only differed in their copy used different code, or whole pages using the same layout had been rewritten to look and function the same.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      I would be starting from scratch to write the new stylesheets and converting one page of markup at a time, so I needed to know how to consolidate the current code into components. The best way to do this was to create an inventory of existing elements.
+    </p>
+    <div class="o-flexGrid o-flexGrid--gutters">
+      <img src="/assets/images/racc-inventory1.png" alt="RACC Inventory Page 1" class="o-flexGrid__cell c-project__image c-project__image--long u-marginTop--0 u-paddingBottom--0" />
+      <img src="/assets/images/racc-inventory2.png" alt="RACC Inventory Page 2" class="o-flexGrid__cell c-project__image c-project__image--long u-marginTop--0 u-paddingBottom--0" />
+      <img src="/assets/images/racc-inventory3.png" alt="RACC Inventory Page 3" class="o-flexGrid__cell c-project__image c-project__image--long u-marginTop--0 u-paddingBottom--0" />
+    </div>
+    <p class="c-caption">The first three pages of the component&nbsp;inventory.</p>
+    <p>
+      I made note of any differing circumstances for each and consolidated them into one new component. Using my SCSS framework as a base, I created the RACC-specific styles as I went.
+    </p>
+    <p>
+      Once I had created the common components, I began rewriting the markup page by page. The development team continued to develop new features and releases during the rewrite, so I worked closely with a developer to keep my branch up to date with the develop branch, and fix tests as I broke them.
+    </p>
+    <p>
+      I also created a pattern library for the new components which included examples and code snippets of components for developers to use when building new features.
+    </p>
+    <img src="/assets/images/racc-style-guide.png" alt="RACC Pattern Guide" class="c-project__image c-project__image--long" />
+    <p class="c-caption">The RACC pattern library.</p>
+    <p>
+      While the conversion hasn't been completed yet, it didn't take long before the developers were able to use the converted components to help convert the markup, as well as use the new styles when developing new features for RACC. The conversion has already made development quicker and easier for the developers, and will only continue to grow.
+    </p>
+  </div>
+</section>

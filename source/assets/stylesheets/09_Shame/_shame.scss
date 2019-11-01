@@ -3,7 +3,23 @@
 }
 
 .view-more-work {
-  @extend .c-header__item;
+  margin: 0 $baseSpacingUnit--small;
+  padding: $baseSpacingUnit--small;
+  font-family: $font-heading;
+  font-weight: 600;
+}
+
+.checkOutGithub {
+  line-height: 1;
+
+  &__link {
+    font-weight: 400;
+  }
+}
+
+.u-marginHorizontal--auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 li {

@@ -6,6 +6,10 @@
   padding: $baseSpacingUnit $baseSpacingUnit--huge;
   background-color: $secondary;
 
+  @include mediaQuery(palm) {
+    padding: $baseSpacingUnit $baseSpacingUnit--large;
+  }
+
   &__logo {
     height: ($baseLineHeight * $baseFontSize) + $baseSpacingUnit;
     width: ($baseLineHeight * $baseFontSize) + $baseSpacingUnit;
@@ -23,15 +27,12 @@
     display: block;
     margin: 0 $baseSpacingUnit--small;
     padding: $baseSpacingUnit--small;
+    color: $color-body;
     font-family: $font-heading;
 
     @include mediaQuery(palm) {
       margin: 0 $baseSpacingUnit--tiny;
       line-height: 1;
-    }
-
-    &:hover {
-      opacity: 0.65;
     }
   }
 }

@@ -1,5 +1,5 @@
 .c-icon {
-  display: inline-block;
+  display: block;
   height: 22px;
   width: 22px;
   background-size: 20px;
@@ -14,6 +14,11 @@
   &--large {
     height: $baseSpacingUnit--huge;
     width: $baseSpacingUnit--huge;
+    background-size: $baseSpacingUnit--huge;
+  }
+
+  &--hat {
+    background-image: url('../images/icon--hat.svg');
   }
 
   &--linkedin {
