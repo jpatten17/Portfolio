@@ -31,6 +31,24 @@ iframe {
   border-radius: 2px;
 }
 
+.mobile_viewer_app--fileLink--9l2Z1 {
+  display: none;
+}
+
+.masonry {
+  column-count: 2;
+  column-gap: $baseSpacingUnit;
+
+  @include mediaQuery(palm) {
+    column-count: 1;
+  }
+
+  &__brick {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
 .modal {
   position: fixed;
   z-index: 1;

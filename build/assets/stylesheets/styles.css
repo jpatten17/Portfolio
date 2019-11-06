@@ -736,7 +736,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 192px;
   width: 200px;
   padding: 14px;
   border: 1px solid #002b2a;
@@ -770,11 +770,11 @@ code {
     transition: filter 0.1s;
     transition: filter 0.1s, -webkit-filter 0.1s; }
     .c-card__image--arrow {
-      background-image: url("../images/arrow-preview.png"); }
+      background-image: url("../images/arrow-preview.jpg"); }
     .c-card__image--raccMobile {
-      background-image: url("../images/racc-mobile-preview.png"); }
+      background-image: url("../images/racc-mobile-preview.jpg"); }
     .c-card__image--conversion {
-      background-image: url("../images/racc-inventory3.png");
+      background-image: url("../images/racc-inventory3.jpg");
       background-position-y: 18%; }
     .c-card__image--graphicDesign {
       background-image: url("../images/graphic-design-preview.jpg"); }
@@ -2761,6 +2761,25 @@ li {
 iframe {
   border: 1px solid #002b2a;
   border-radius: 2px; }
+
+.mobile_viewer_app--fileLink--9l2Z1 {
+  display: none; }
+
+.masonry {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px; }
+  @media screen and (max-width: 44.9375em) {
+    .masonry {
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1; } }
+  .masonry__brick {
+    display: inline-block;
+    width: 100%; }
 
 .modal {
   position: fixed;

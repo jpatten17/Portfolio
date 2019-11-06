@@ -8,33 +8,33 @@ title: "RACC Mobile | "
   <div class="c-section__maxWidth">
     <h2>RACC Mobile</h2>
     <p>
-      Call centers handle millions of calls from their customers each day, and RACC does the heavy lifting. RACC (Routing and Call Control) is a voice engine that allows technical account managers and call center users to configure their call traffic and get their users to the correct destination. As Vail Systems' largest product, RACC's web application has grown over its ten years of existence, but the user interface is limited in that it was built for desktop&nbsp;only.
+      Call centers handle millions of calls from their customers each day, and RACC does the heavy lifting. RACC (Routing and Call Control) is a voice engine that allows technical account managers and call center users to configure their call traffic and get their users to the correct destination. As Vail Systems' largest product, RACC's web application has grown over its ten years of existence, but the user interface is limited in that it was built for&nbsp;desktop&nbsp;only.
     </p>
     <p>
-      I was tasked with making RACC mobile compatible for a large incoming customer. RACC was already partly converted to use <a href="/projects/arrow">my SCSS framework</a> which included responsiveness, making most pages responsive from the conversion, but a few major features would need a redesign. Super Profiles and Quick edit are features in two separate locations in the portal, but for the most part, allowed users to perform the same actions. Both features allowed a user to configure their call traffic using a custom weekly schedule, so I tackled these together. Their only difference is in the type of data users can configure. The outcome was the two features using the same components, a similar user flow, and both could now easily be used on&nbsp;mobile.
+      I was tasked with making RACC mobile compatible for a large incoming customer. RACC was already partly converted to use <a href="/projects/arrow">my SCSS framework</a> which included responsiveness, making most pages responsive from the conversion, but a few major features would need a redesign. Super Profiles and Quick edit are features in two separate locations in the portal, but for the most part, allowed users to perform the same actions. Both features allowed a user to configure their call traffic using a custom weekly schedule, so I tackled these together. Their only difference is in the type of data users can configure. The outcome was the two features using the same components, a similar user flow, and both could now easily be used&nbsp;on&nbsp;mobile.
     </p>
 
     <h3>The Problem</h3>
     <p>
-      Redesign the Super Profiles and Quick Edit features to create a seamless and user-friendly mobile experience that minimizes differences between the two&nbsp;features.
+      Redesign the Super Profiles and Quick Edit features to create a seamless and user-friendly mobile experience that minimizes differences between the&nbsp;two&nbsp;features.
     </p>
 
     <h3>Requirements</h3>
     <ol>
       <li>Keep the same functionality as&nbsp;before.</li>
-      <li>Don't deviate too much from the current flow so users won't get&nbsp;lost.</li>
+      <li>Don't deviate too much from the current flow so users won't&nbsp;get&nbsp;lost.</li>
     </ol>
 
     <h3>The Solution</h3>
     <p>
-      My largest struggle through the redesign was that I didn't know how these features worked initially. I spent a couple of weeks speaking with stakeholders and technical account managers to understand the benefits of the features, how to use them, and what their pain points were, then recreated the current user flows so I could identify commonalities, differences, strengths, and&nbsp;weaknesses.
+      My largest struggle through the redesign was that I didn't know how these features worked initially. I spent a couple of weeks speaking with stakeholders and technical account managers to understand the benefits of the features, how to use them, and what their pain points were, then recreated the current user flows so I could identify commonalities, differences, strengths,&nbsp;and&nbsp;weaknesses.
     </p>
     <p>
-      Although Super Profiles and Quick Edit both include a scheduler and allow users to configure data, there were multiple differences between their user flows. Quick Edit allowed users to complete all tasks within a single page, while Super Profiles split the scheduler and data configuration across multiple&nbsp;pages.
+      Although Super Profiles and Quick Edit both include a scheduler and allow users to configure data, there were multiple differences between their user flows. Quick Edit allowed users to complete all tasks within a single page, while Super Profiles split the scheduler and data configuration across&nbsp;multiple&nbsp;pages.
     </p>
 
     <img src="/assets/images/current-super-profiles.jpg" alt="The original Super Profiles." class="c-project__image c-project__image--large" />
-    <p class="c-caption">The original Super profiles page included a button to another page where users could manage the time segments, as well as a list of the same segments which each allowed users to configure data for each segment on a third&nbsp;page.</p>
+    <p class="c-caption">The original Super profiles page included a button to another page where users could manage the time segments, as well as a list of the same segments which each allowed users to configure data for each segment on&nbsp;a&nbsp;third&nbsp;page.</p>
 
     <img src="/assets/images/current-quick-edit.jpg" alt="The original Quick Edit." class="c-project__image c-project__image--large" />
     <p class="c-caption">The original Quick Edit allows users to both manage time segments and configure the data for each in the same view but is still cumbersome&nbsp;to&nbsp;use.</p>
@@ -43,20 +43,20 @@ title: "RACC Mobile | "
       I began working with Super Profiles to combine it into a single page, with plans to adapt Quick Edit to the new design soon after. I created sketch after sketch of ideas for the mobile design and collaborated with my manager to critique my sketches and whiteboard new&nbsp;solutions.
     </p>
     <p>
-      One of the pain points of the original scheduler was that it had no error prevention. The form forced users to input the time segments manually but did not alert users to the multiple criteria the times needed to follow. The time segments in the scheduler were required to add up to an entire day, but there wasn't any validation around it. Instead, I replaced the manual time entries with a large slider, where users could add dividing points in the timeline preventing any missing or overlapping segments. The slider also compacted the time of day portion of the scheduler, allowing it to fit easily on mobile and act as a high-level visualization for the&nbsp;schedule.
+      One of the pain points of the original scheduler was that it had no error prevention. The form forced users to input the time segments manually but did not alert users to the multiple criteria the times needed to follow. The time segments in the scheduler were required to add up to an entire day, but there wasn't any validation around it. Instead, I replaced the manual time entries with a large slider, where users could add dividing points in the timeline preventing any missing or overlapping segments. The slider also compacted the time of day portion of the scheduler, allowing it to fit easily on mobile and act as a high-level visualization for&nbsp;the&nbsp;schedule.
     </p>
 
     <img src="/assets/images/round2-super-profiles-manage-segments.jpg" alt="Super Profiles Initial Sketches" class="c-project__image c-project__image--large" />
-    <p class="c-caption">The top sketch is the final of the first round of sketches, which is the original design translated to mobile. The bottom sketch is the final sketch of round two where I created the slider instead of time&nbsp;inputs.</p>
+    <p class="c-caption">The top sketch is the final of the first round of sketches, which is the original design translated to mobile. The bottom sketch is the final sketch of round two where I created the slider instead&nbsp;of&nbsp;time&nbsp;inputs.</p>
 
     <img src="/assets/images/round2-quick-edit-whiteboard.jpg" alt="Quick Edit Round Two Whiteboarding" class="c-project__image c-project__image--large" />
-    <p class="c-caption">We whiteboarded the slider idea after round two to assess and enhance its usability; this image is of&nbsp;Quick&nbsp;Edit.</p>
+    <p class="c-caption">We whiteboarded the slider idea after round two to assess and enhance its usability; this image is&nbsp;of&nbsp;Quick&nbsp;Edit.</p>
 
     <img src="/assets/images/round3-super-profiles.jpg" alt="Super Profiles Round Three Sketches" class="c-project__image c-project__image--long" />
-    <p class="c-caption">The final sketch from the third and final round of sketches included changes made while whiteboarding, and was drawn to the full length of a (shorter) real-world example to demonstrate page&nbsp;length.</p>
+    <p class="c-caption">The final sketch from the third and final round of sketches included changes made while whiteboarding, and was drawn to the full length of a (shorter) real-world example to demonstrate&nbsp;page&nbsp;length.</p>
 
     <p>
-      Once we were satisfied with the initial design, I recreated my sketches as prototypes in Figma for user testing. I collaborated with a coworker to create and run the user tests with some of our internal users, focusing on the usability of the new slider. As expected, some testers didn't notice that the slider was interactive and could not complete the task but once given instruction (our customers receive training on features), all testers were able to use the slider&nbsp;smoothly.
+      Once we were satisfied with the initial design, I recreated my sketches as prototypes in Figma for user testing. I collaborated with a coworker to create and run the user tests with some of our internal users, focusing on the usability of the new slider. As expected, some testers didn't notice that the slider was interactive and could not complete the task but once given instruction (our customers receive training on features), all testers were able to use the&nbsp;slider&nbsp;smoothly.
     </p>
 
     <img src="/assets/images/super-profiles-prototype.jpg" alt="View of the collapsed Super Profiles prototype." class="c-project__image" />
@@ -66,13 +66,14 @@ title: "RACC Mobile | "
     <p class="c-caption">A cropped view of the slider prototype both open and closed used for testing Super&nbsp;Profiles.</p>
 
     <p>
-      The testing also revealed some minor pain points in the design, but most were easily addressable and adjusted in the prototypes. I also created prototypes for the redesigned desktop versions of each feature to demonstrate the new slider on desktop. Finally, we completed another round of testing for both mobile and desktop versions, and I presented the redesign to&nbsp;stakeholders.
+      The testing also revealed some minor pain points in the design, but most were easily addressable and adjusted in the prototypes. I also created prototypes for the redesigned desktop versions of each feature to demonstrate the new slider on desktop. Finally, we completed another round of testing for both mobile and desktop versions, and I presented the redesign&nbsp;to&nbsp;stakeholders.
     </p>
 
-    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdlcH5amWMT1nFOEJbUMvzK%2FSuper-Profiles-Mobile-Test%3Fnode-id%3D24%253A0" height="400" width="100%" allowfullscreen></iframe>
+    <iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdlcH5amWMT1nFOEJbUMvzK%2FSuper-Profiles-Mobile-Test%3Fnode-id%3D23%253A61%26scaling%3Dcontain" allowfullscreen></iframe>
     <p class="c-caption">Final mobile Super Profiles Prototype</p>
 
-    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmCruvOvLRhBPcNqrsXNEbs%2FSuper-Profiles-Desktop-POC%3Fnode-id%3D82%253A454" height="400" width="100%" allowfullscreen></iframe>
+    <iframe width="100%" height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmCruvOvLRhBPcNqrsXNEbs%2FSuper-Profiles-Desktop-POC%3Fnode-id%3D83%253A15%26scaling%3Dcontain" allowfullscreen></iframe>
     <p class="c-caption">Final desktop Super Profiles Prototype</p>
   </div>
 </section>

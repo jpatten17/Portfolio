@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 192px;
   width: 200px;
   padding: $baseSpacingUnit;
   border: 1px solid $green--100;
@@ -46,15 +46,15 @@
     transition: filter 0.1s;
 
     &--arrow {
-      background-image: url('../images/arrow-preview.png');
+      background-image: url('../images/arrow-preview.jpg');
     }
 
     &--raccMobile {
-      background-image: url('../images/racc-mobile-preview.png');
+      background-image: url('../images/racc-mobile-preview.jpg');
     }
 
     &--conversion {
-      background-image: url('../images/racc-inventory3.png');
+      background-image: url('../images/racc-inventory3.jpg');
       background-position-y: 18%;
     }
 
